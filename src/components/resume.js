@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import DigitalExperience from './digitalexperience';
+import JobExperience from './jobexperience';
 import Skills from './skills';
 import leancv2 from './img/leancv2.jpg';
 
@@ -29,9 +30,9 @@ class Resume extends Component {
                         <h5>Fecha de nacimiento</h5>
                         <p>03/02/2000</p>
                         <h5>Sitios Web</h5>
-                        <p>https://github.com/leandrofulco03</p>
-                        <p>https://www.linkedin.com/in/leandrofulco/</p>
-                        <p>https://www.behance.net/leandrofulco00</p>
+                        <p><a href="https://github.com/leandrofulco03">GitHub</a></p>
+                        <p><a href="https://www.linkedin.com/in/leandrofulco/">Linkedin</a></p>
+                        <p><a href="https://www.behance.net/leandrofulco00">Behance</a></p>
                         <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
 
                     </Cell>
@@ -90,6 +91,16 @@ class Resume extends Component {
                         />
                         <hr style={{borderTop: '3px solid #e22947'}} />
 
+                        <h2>Experiencia Laboral</h2>
+
+                        <JobExperience
+                            startYear= {"Enero 2021"}
+                            endYear= {"Abril 2021"}
+                            jobName= "ACTIVO CONTACT CENTER"
+                            jobDescription= "Telemarketer vendedor de productos de Telecom (Cablevisión, Fibertel, Personal)"
+                        />
+                        <hr style={{borderTop: '3px solid #e22947'}} />
+
                         <h2>Skills</h2>
                         <Skills
                             skill="HTML/CSS"
@@ -101,15 +112,15 @@ class Resume extends Component {
                         />
                         <Skills
                             skill="PHP"
-                            progress={50}
+                            progress={40}
                         />
                         <Skills
                             skill="Laravel"
-                            progress={55}
+                            progress={40}
                         />
                         <Skills
                             skill="React JS"
-                            progress={50}
+                            progress={60}
                         />
                         <Skills
                             skill="MySQL"

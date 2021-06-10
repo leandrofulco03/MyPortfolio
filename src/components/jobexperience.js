@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 
-class DigitalExperience extends Component {
+class JobExperience extends Component {
     render() {
-        return (
+        return(
             <Grid>
                 <Cell col={4}>
                     <p>{this.props.startYear} - {this.props.endYear}</p>
@@ -11,11 +11,10 @@ class DigitalExperience extends Component {
                 <Cell col={8}>
                     <h4 style={{marginTop: '0px'}}>{this.props.jobName}</h4>
                     <p>{this.props.jobDescription}</p>
-                    <p style={{fontWeight: 'bold'}}>{this.props.jobThemes}</p>
                 </Cell>
             </Grid>
         )
     }
 }
 
-export default DigitalExperience;
+export default JobExperience;
